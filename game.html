@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>quizz - play</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="loader">Loading...</div>
+		<div id="game" class="justify-center flex-column hidden">
+			<div id="progressbar">
+				<div id="progressbar-full"></div>
+			</div>
+			<div id="hud">
+				<div id="item-hud">
+					<p class="prefix-hud">Question</p>
+					<h2 id="counter"class="min-text" ></h2>
+				</div>
+				<div id="item-hud">
+					<p class="prefix-hud">Score</p>
+					<h2 id="score" class="min-text">0</h2>
+				</div>
+			</div>
+			<h2 id="question">Question</h2>
+			<div class="choice-wrapper">
+				<p class="prefix">A</p>
+				<p class="text" data-number="1">Choice 1</p>
+			</div>
+			<div class="choice-wrapper">
+				<p class="prefix">B</p>
+				<p class="text" data-number="2">Choice 2</p>
+			</div>
+			<div class="choice-wrapper">
+				<p class="prefix">C</p>
+				<p class="text" data-number="3">Choice 3</p>
+			</div>
+			<div class="choice-wrapper">
+				<p class="prefix">D</p>
+				<p class="text" data-number="4">Choice 4</p>
+			</div>
+		</div>
+	</div>
+	<script src="./game.js"></script>
+</body>
+</html>
